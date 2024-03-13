@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "ms-azuretools.vscode-docker",
+    "mikestead.dotenv",
+    "tamasfe.even-better-toml",
+    "1yib.rust-bundle",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}
