@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:latest
+    container_name: rustic_blog_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: rustic_blog
+    volumes:
+      - ./database:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
+
+  adminer:
+    image: adminer
+    container_name: rustic_blog_adminer
+    restart: always
+    ports:
+      - "8080:8080"
